@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Work | Vorde Studio</title>
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 48px;
+            margin-top: 60px;
+        }
+        .project-card {
+            background: var(--surface-solid);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .project-img {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #1a1a1a;
+            position: relative;
+            overflow: hidden;
+        }
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .project-card:hover .project-img img {
+            transform: scale(1.05);
+        }
+        .project-info {
+            padding: 32px;
+        }
+        .project-category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 768px) {
+            .work-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- GLOBAL ANIMATED GRADIENT BACKGROUND -->
+    <div class="bg-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Vorde<span>.</span></a>
+            
+            <nav class="nav-links">
+                <a href="services.html">Services</a>
+                <a href="work.html">Our Work</a>
+                <a href="index.html#process">Process</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:8001234567" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    (800) 123-4567
+                </a>
+                <a href="book-call.html" class="btn btn-primary nav-btn">Book Strategy Call</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= WORK CONTENT ================= -->
+    <section class="work" style="padding-top: 180px;">
+        <!-- 3D FLOATING ORBS -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-3" style="top: 80%; left: 5%; width: 100px; height: 100px; animation-delay: -3s;"></div>
+
+        <div class="container">
+            <div class="section-header reveal">
+                <h1 class="heading-lg">Success Stories & <br><span class="text-accent">Live Transformations</span></h1>
+                <p class="subtitle" style="margin: 0 auto;">See how we've helped service businesses across the USA scale their operations with high-performance digital infrastructure.</p>
+            </div>
+
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="HVAC Website Design">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">HVAC & Plumbing</div>
+                        <h3 class="project-title">ProAir Comfort Solutions</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Complete brand overhaul and conversion-optimized website for a leading Dallas-based HVAC company.</p>
+                        <div style="margin-top: 20px; color: var(--success); font-weight: 600; font-size: 0.9rem;">
+                            <i class="fas fa-arrow-trend-up"></i> +150% Emergency Inbound Calls
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dental Website Design">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Cosmetic Dentistry</div>
+                        <h3 class="project-title">Elite Smile Dental</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">A luxury patient-first experience designed to automate booking and build instant trust with cosmetic cases.</p>
+                        <div style="margin-top: 20px; color: var(--success); font-weight: 600; font-size: 0.9rem;">
+                            <i class="fas fa-arrow-trend-up"></i> +40% New Patient Consultations
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1635416638500-291fd2478145?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roofing Website Design">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Roofing & Solar</div>
+                        <h3 class="project-title">TopTier Roofing Contractors</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">A storm-season lead machine built to capture and qualify full roof replacement leads in real-time.</p>
+                        <div style="margin-top: 20px; color: var(--success); font-weight: 600; font-size: 0.9rem;">
+                            <i class="fas fa-arrow-trend-up"></i> 3.5X Return on Ad Spend (ROAS)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" style="transition-delay: 0.3s;">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Medical Clinic Website">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category">Specialty Clinics</div>
+                        <h3 class="project-title">Avenue Wellness Centre</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Modern, calming interface designed to handle multi-clinic scheduling and patient management.</p>
+                        <div style="margin-top: 20px; color: var(--success); font-weight: 600; font-size: 0.9rem;">
+                            <i class="fas fa-arrow-trend-up"></i> Reduced Booking Friction by 60%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FINAL CTA ================= -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box tilt-card reveal">
+                <div class="tilt-inner">
+                    <h2 class="heading-lg">Will your success story be next?</h2>
+                    <p class="subtitle" style="margin: 0 auto 40px; color: #fff;">Book a discovery call and let's discuss how we can scale your business.</p>
+                    <a href="book-call.html" class="btn btn-primary">Book Your Free Strategy Session</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">Vorde<span>.</span></div>
+                    <p class="footer-desc">Premium web design and conversion optimization for USA-based service businesses.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/vorde.studio/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="work.html">Our Work</a></li>
+                        <li><a href="book-call.html">Book Call</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Conversion Optimization</a></li>
+                        <li><a href="services.html">Local SEO</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:8001234567">(800) 123-4567</a></li>
+                        <li><a href="mailto:hello@vordestudio.com">hello@vordestudio.com</a></li>
+                        <li>Austin, TX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vorde Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
